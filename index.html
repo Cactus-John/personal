@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>ℭ𝔞𝔠𝔱𝔲𝔰-𝔍𝔬𝔥𝔫</h1>
+            <button type="button">𝔐𝔬𝔯𝔢</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="column">
+            <a href="music.html" target="_blank">
+                <div class="column-border">
+                    <i class="fa-solid fa-music" style="color: #ff0000;"></i>
+                    <h1>Music</h1>
+                </div>
+            </a>
+        </div>
+        <div class="column">
+            <div class="column-border">
+                <i class="fa-solid fa-code" style="color: #ff0000;"></i>
+                <h1>Code</h1>
+            </div>
+        </div>
+        <div class="column">
+            <div class="column-border">
+                <i class="fa-regular fa-image" style="color: #ff0000;"></i>
+                <h1>Life</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class = "mode">
+        <button type="button" id="mode-toggle">Light Mode</button>
+    </div>
+
+    <script>
+        const button = document.getElementById("mode-toggle");
+
+        button.addEventListener("click", function () {
+            document.body.classList.toggle("light-mode");
+
+            // Change button text based on the mode
+            if (document.body.classList.contains("light-mode")) {
+                button.textContent = "Dark Mode";
+            } else {
+                button.textContent = "Light Mode";
+            }
+        });
+    </script>
+
+    <script src="https://kit.fontawesome.com/2937843cfc.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
